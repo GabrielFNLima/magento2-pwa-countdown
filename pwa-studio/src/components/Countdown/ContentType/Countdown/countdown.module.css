@@ -1,0 +1,22 @@
+.wrapper {
+    composes: flex from global;
+}
+
+.field {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: justify-items-center from global;
+    composes: gap-1.5 from global;
+    composes: font-light from global;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+}
+.field div {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+}
+
+.label {
+    composes: text-base from global;
+    margin-top: -5px;
+    letter-spacing: normal;
+}
